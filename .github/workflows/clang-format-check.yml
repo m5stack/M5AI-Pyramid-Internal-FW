@@ -11,23 +11,22 @@ on:
     branches:
       - '*'
     paths:
-      - '*'
-      - '**.ino'
-      - '**.cpp'
-      - '**.hpp'
-      - '**.h'
-      - '**.c'
-      - '**.inl'
+      - 'code/M5_650N_Pyramind_STM32/Drivers/M5_Pyrmind_Drivers/**.ino'
+      - 'code/M5_650N_Pyramind_STM32/Drivers/M5_Pyrmind_Drivers/**.cpp'
+      - 'code/M5_650N_Pyramind_STM32/Drivers/M5_Pyrmind_Drivers/**.hpp'
+      - 'code/M5_650N_Pyramind_STM32/Drivers/M5_Pyrmind_Drivers/**.h'
+      - 'code/M5_650N_Pyramind_STM32/Drivers/M5_Pyrmind_Drivers/**.c'
+      - 'code/M5_650N_Pyramind_STM32/Drivers/M5_Pyrmind_Drivers/**.inl'
       - '**clang-format-check.yml'
       - '**.clang-format'
   pull_request:
     paths:
-      - '**.ino'
-      - '**.cpp'
-      - '**.hpp'
-      - '**.h'
-      - '**.c'
-      - '**.inl'
+      - 'code/M5_650N_Pyramind_STM32/Drivers/M5_Pyrmind_Drivers/**.ino'
+      - 'code/M5_650N_Pyramind_STM32/Drivers/M5_Pyrmind_Drivers/**.cpp'
+      - 'code/M5_650N_Pyramind_STM32/Drivers/M5_Pyrmind_Drivers/**.hpp'
+      - 'code/M5_650N_Pyramind_STM32/Drivers/M5_Pyrmind_Drivers/**.h'
+      - 'code/M5_650N_Pyramind_STM32/Drivers/M5_Pyrmind_Drivers/**.c'
+      - 'code/M5_650N_Pyramind_STM32/Drivers/M5_Pyrmind_Drivers/**.inl'
       - '**clang-format-check.yml'
       - '**.clang-format'
   workflow_dispatch:
@@ -39,7 +38,7 @@ jobs:
     strategy:
       matrix:
         path:
-          - check: './'    # path to include
+          - check: 'code/M5_650N_Pyramind_STM32/Drivers/M5_Pyrmind_Drivers'    # path to include
             exclude: ''    # path to exclude
           #- check: 'src'
           #  exclude: '(Fonts)' # Exclude file paths containing "Fonts"
